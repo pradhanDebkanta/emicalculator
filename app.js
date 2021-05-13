@@ -20,6 +20,14 @@ function calculateHomeLoanEMI(btnName) {
 		j--;
 
 	}
+	
+	// this is for delete previous piechat
+
+	let myPieChat = document.querySelector('.pie-chat-box');
+	while (myPieChat) {
+		myPieChat.parentNode.removeChild(myPieChat);
+		myPieChat = false;
+	}
 
 	//	END HERE THE ABOVE CONDITION
 
